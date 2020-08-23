@@ -57,7 +57,7 @@ input, select {
 }
 
 .my-btn {
-    padding: 2% 10%;
+    padding: .7rem 10%;
     background: var(--third-color);
     color: #fff;
     font-weight: 600;
