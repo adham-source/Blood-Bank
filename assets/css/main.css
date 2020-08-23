@@ -943,7 +943,7 @@ footer .link-app img {
 }
 
 .article .article-details-img img {
-    /*height: 30rem;*/
+    width: 100%;
 }
 
 .article .article-details-title {
