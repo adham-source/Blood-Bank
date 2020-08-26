@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
         <!--Owl carousel CSS-->
         <link rel="stylesheet" href="./assets/plugin/owlcarousel/assets/owl.carousel.min.css" />
@@ -17,8 +17,9 @@
 
         <!--Start my file CSS-->
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/main-en.css" />
 
-        <title>بنك الدم</title>
+        <title>Blood Bank</title>
     </head>
     <body>
         <!--Start header-->
@@ -29,12 +30,12 @@
                 <div class="container">
                     <div class="row py-2">
                         <div class="col-lg-4 col-md-2 col-12 langs">
-                            <a href="index.html">
-                                <span class="lang-ar active">عربي</span>
+                            <a href="index-en.html">
+                                <span class="lang-en active">EN</span>
                             </a>
                             <span class="entity">&#8739;</span>
-                            <a href="index-en.html">
-                                <span class="lang-en">EN</span>
+                            <a href="index.html">
+                                <span class="lang-ar">عربي</span>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-4 col-12 social-media">
@@ -55,14 +56,14 @@
                         </div>
                         <div class="col-lg-5 col-md-6 col-12 contact">
                             <address>
+                                <i class="far fa-envelope"></i>
                                 <a href="mailto:name@name.com">
                                     <span>name@name.com</span>
-                                    <i class="far fa-envelope"></i>
                                 </a>
                                 <span class="entity">&#8739;</span>
                                 <a href="#">
-                                    <span><bdi>+425879654235</bdi></span>
                                     <i class="fas fa-phone-alt"></i>
+                                    <span><bdi>+425879654235</bdi></span>
                                 </a>
                             </address>
                         </div>
@@ -71,8 +72,9 @@
             </section>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo.png" alt="بنك الدم" />
+                    <a class="navbar-brand mr-0" href="index-en.html">
+                        <!--<h1 class="logo">Blood Bank</h1>-->
+                        <img src="assets/images/logo.png" alt="Blood Bank" />
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -81,27 +83,29 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">الرئيسية<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index-en.html">Home<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">عن بنك الدم</a>
+                                <a class="nav-link" href="#">About bank
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="article.html">المقالات</a>
+                                <a class="nav-link" href="article-en.html">Article</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="request.html">طلبات التبرع</a>
+                                <a class="nav-link" href="request-en.html">requests</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about-us.html">من نحن</a>
+                                <a class="nav-link" href="about-us-en.html">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contacts-us.html">اتصل بنا</a>
+                                <a class="nav-link" href="contacts-us-en.html">Contact us</a>
                             </li>
                         </ul>
                         <div class="my-2 my-lg-0 register">
-                            <a class="register-link" href="registration-signup.html">انشاء حساب جديد</a>
-                            <a class="my-btn register-btn" href="registration-signin.html">الدخول</a>
+                            <a class="register-link" href="registration-signup-en.html">Create account
+                            </a>
+                            <a class="my-btn register-btn" href="registration-signin-en.html">Login</a>
                         </div>
                     </div>
                 </div>
@@ -121,11 +125,33 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
+                                    <div class="col-lg-6 offset-lg-6 col-md-12">
                                         <div class="slogan-text">
-                                            <h2>بنك الدم نمضى قدما لصحة أفضل</h2>
-                                            <p>هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العرب</p>
-                                            <a class="my-btn slogn-btn" href="#">المزيد</a>
+                                            <h2>Blood bank moving forward to better health</h2>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis consectetur alias deleniti perferendis eaque eos.</p>
+                                            <a class="my-btn slogn-btn" href="#">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6 offset-lg-6 col-md-12">
+                                        <div class="slogan-text">
+                                            <h2>Blood bank moving forward to better health</h2>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis consectetur alias deleniti perferendis eaque eos.</p>
+                                            <a class="my-btn slogn-btn" href="#">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6 offset-lg-6 col-md-12">
+                                        <div class="slogan-text">
+                                            <h2>Blood bank moving forward to better health</h2>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis consectetur alias deleniti perferendis eaque eos.</p>
+                                            <a class="my-btn slogn-btn" href="#">More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -134,31 +160,9 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="slogan-text">
-                                            <h2>بنك الدم نمضى قدما لصحة أفضل</h2>
-                                            <p>هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العرب</p>
-                                            <a class="my-btn slogn-btn" href="#">المزيد</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="slogan-text">
-                                            <h2>بنك الدم نمضى قدما لصحة أفضل</h2>
-                                            <p>هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العرب</p>
-                                            <a class="my-btn slogn-btn" href="#">المزيد</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="slogan-text">
-                                            <h2>بنك الدم نمضى قدما لصحة أفضل</h2>
-                                            <p>هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العرب</p>
-                                            <a class="my-btn slogn-btn" href="#">المزيد</a>
+                                            <h2>Blood bank moving forward to better health</h2>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis consectetur alias deleniti perferendis eaque eos.</p>
+                                            <a class="my-btn slogn-btn" href="#">More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -179,10 +183,11 @@
             <section class="about-us">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-12 my-auto">
+                        
+                        <div class="col-lg-6 col-12 offset-lg-6 my-auto">
                             <p>
-                                <span>بنك الدم</span>
-                                هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربى حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق يطلع على صورة حقيقة لتصميم الموقع
+                                <span>Blood bank</span>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In aliquam quaerat molestias vitae iusto, harum reiciendis nihil! Eaque repellendus dolorem, delectus odio aperiam explicabo minima fuga officia? Neque, excepturi dicta.
                             </p>
                         </div>
                     </div>
@@ -193,97 +198,97 @@
             <!--Start article-->
             <section class="article mt-3" id="article">
                 <div class="container">
-                    <h2 class="sub-head">المقالات</h2>
+                    <h2 class="sub-head">Articles</h2>
                 </div>
                 <hr />
                 <div class="container">
                     <div class="owl-carousel">
                         <div>
-                            <div class="card">
+                            <div class="card" dir="auto">
                                 <img src="./assets/images/p1.jpg" class="card-img-top" alt="image">
                                 <div class="icon-heart">
                                     <i class="far fa-heart"></i>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">طريقة الوقاية من الأمراض</h5>
-                                    <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي</p>
+                                    <h5 class="card-title">Method of disease prevention</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam reiciendis impedit sequi tenetur recusandae.</p>
                                     <div class="btn-article">
-                                        <a href="article.html" class="my-btn">التفاصيل</a>
+                                        <a href="article-en.html" class="my-btn">Details</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="card">
+                            <div class="card" dir="auto">
                                 <img src="./assets/images/p2.jpg" class="card-img-top" alt="image">
                                 <div class="icon-heart">
                                     <i class="far fa-heart"></i>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">طريقة الوقاية من الأمراض</h5>
-                                    <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي</p>
+                                    <h5 class="card-title">Method of disease prevention</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam reiciendis impedit sequi tenetur recusandae.</p>
                                     <div class="btn-article">
-                                        <a href="article.html" class="my-btn">التفاصيل</a>
+                                        <a href="article-en.html" class="my-btn">Details</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="card">
+                            <div class="card" dir="auto">
                                 <img src="./assets/images/p1.jpg" class="card-img-top" alt="image">
                                 <div class="icon-heart">
                                     <i class="far fa-heart"></i>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">طريقة الوقاية من الأمراض</h5>
-                                    <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي</p>
+                                    <h5 class="card-title">Method of disease prevention</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam reiciendis impedit sequi tenetur recusandae.</p>
                                     <div class="btn-article">
-                                        <a href="article.html" class="my-btn">التفاصيل</a>
+                                        <a href="article-en.html" class="my-btn">Details</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="card">
+                            <div class="card" dir="auto">
                                 <img src="./assets/images/p2.jpg" class="card-img-top" alt="image">
                                 <div class="icon-heart">
                                     <i class="far fa-heart"></i>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">طريقة الوقاية من الأمراض</h5>
-                                    <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي</p>
+                                    <h5 class="card-title">Method of disease prevention</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam reiciendis impedit sequi tenetur recusandae.</p>
                                     <div class="btn-article">
-                                        <a href="article.html" class="my-btn">التفاصيل</a>
+                                        <a href="article-en.html" class="my-btn">Details</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="card">
+                            <div class="card" dir="auto">
                                 <img src="./assets/images/p1.jpg" class="card-img-top" alt="image">
                                 <div class="icon-heart">
                                     <i class="far fa-heart"></i>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">طريقة الوقاية من الأمراض</h5>
-                                    <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي</p>
+                                    <h5 class="card-title">Method of disease prevention</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam reiciendis impedit sequi tenetur recusandae.</p>
                                     <div class="btn-article">
-                                        <a href="article.html" class="my-btn">التفاصيل</a>
+                                        <a href="article-en.html" class="my-btn">Details</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="card">
+                            <div class="card" dir="auto">
                                 <img src="./assets/images/p2.jpg" class="card-img-top" alt="image">
                                 <div class="icon-heart">
                                     <i class="far fa-heart"></i>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">طريقة الوقاية من الأمراض</h5>
-                                    <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي</p>
+                                    <h5 class="card-title">Method of disease prevention</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam reiciendis impedit sequi tenetur recusandae.</p>
                                     <div class="btn-article">
-                                        <a href="article.html" class="my-btn">التفاصيل</a>
+                                        <a href="article-en.html" class="my-btn">Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -296,7 +301,7 @@
             <!--Start requests-->
             <section class="requests my-4">
                 <div class="container">
-                    <h2 class="sub-head text-center">طلبات التبرع</h2>
+                    <h2 class="sub-head text-center">Donation requests</h2>
                 </div>
                 <hr />
                 <div class="py-2 requests-container">
@@ -305,7 +310,7 @@
                         <div class="selects-box d-flex align-items-center justify-content-center py-4">
                             <div class="btn-group">
                                 <button class="bg-white btn-lg text-left" type="button">
-                                    اختر فصيلة الدم
+                                Choose your blood type
                                 </button>
                                 <button type="button" class="btn-lg bg-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     
@@ -319,16 +324,17 @@
                             </div>
                             <div class="btn-group mx-3">
                                 <button class="bg-white btn-lg text-left" type="button">
-                                    اختر المدينة
+                                Choose a city
                                 </button>
                                 <button type="button" class="btn-lg bg-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     
                                 </button>
                                 <div class="dropdown-menu text-center">
-                                    <a class="dropdown-item" href="#">القاهرة</a>
-                                    <a class="dropdown-item" href="#">أسيوط</a>
-                                    <a class="dropdown-item" href="#">الغربية</a>
-                                    <a class="dropdown-item" href="#">الشرقية</a>
+                                    <a class="dropdown-item" href="#">Cairo</a>
+                                    <a class="dropdown-item" href="#">Asyut</a>
+                                    <a class="dropdown-item" href="#">Al-sharqia</a>
+                                    <a class="dropdown-item" href="#">Al-gharbiuh
+                                    </a>
                                 </div>
                             </div>
                             <div class="search d-inline-flex">
@@ -343,19 +349,19 @@
                                 </div>
                                 <div class="d-inline-flex data-info">
                                     <div class="px-2 data-name">
-                                        <p>اسم الحالة :</p>
-                                        <p class="py-2">المستشفى :</p>
-                                        <p>المدينة :</p>
+                                        <p>Status name :</p>
+                                        <p class="py-2">The hospital :</p>
+                                        <p>City :</p>
                                     </div>
                                     <div class="px-2 data-details">
-                                        <p>احمد محمد احمد</p>
-                                        <p class="py-2">القصر العيني</p>
-                                        <p>المنصورة</p>
+                                        <p>Ahmed Mohamed Ahmed</p>
+                                        <p class="py-2">Al-Ayni Palace</p>
+                                        <p>Mansoura</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center request-btn">
-                                <a class="my-btn" href="inside-request.html">التفاصيل</a>
+                                <a class="my-btn" href="inside-request-en.html">Details</a>
                             </div>
                         </div>
                         <div class="row align-items-center request-content">
@@ -365,19 +371,19 @@
                                 </div>
                                 <div class="d-inline-flex data-info">
                                     <div class="px-2 data-name">
-                                        <p>اسم الحالة :</p>
-                                        <p class="py-2">المستشفى :</p>
-                                        <p>المدينة :</p>
+                                        <p>Status name :</p>
+                                        <p class="py-2">The hospital :</p>
+                                        <p>City :</p>
                                     </div>
                                     <div class="px-2 data-details">
-                                        <p>احمد محمد احمد</p>
-                                        <p class="py-2">القصر العيني</p>
-                                        <p>المنصورة</p>
+                                        <p>Ahmed Mohamed Ahmed</p>
+                                        <p class="py-2">Al-Ayni Palace</p>
+                                        <p>Mansoura</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center request-btn">
-                                <a class="my-btn active" href="inside-request.html">التفاصيل</a>
+                                <a class="my-btn active" href="inside-request-en.html">Details</a>
                             </div>
                         </div>
                         <div class="row align-items-center request-content">
@@ -387,19 +393,19 @@
                                 </div>
                                 <div class="d-inline-flex data-info">
                                     <div class="px-2 data-name">
-                                        <p>اسم الحالة :</p>
-                                        <p class="py-2">المستشفى :</p>
-                                        <p>المدينة :</p>
+                                        <p>Status name :</p>
+                                        <p class="py-2">The hospital :</p>
+                                        <p>City :</p>
                                     </div>
                                     <div class="px-2 data-details">
-                                        <p>احمد محمد احمد</p>
-                                        <p class="py-2">القصر العيني</p>
-                                        <p>المنصورة</p>
+                                        <p>Ahmed Mohamed Ahmed</p>
+                                        <p class="py-2">Al-Ayni Palace</p>
+                                        <p>Mansoura</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center request-btn">
-                                <a class="my-btn" href="inside-request.html">التفاصيل</a>
+                                <a class="my-btn" href="inside-request-en.html">Details</a>
                             </div>
                         </div>
                         <div class="row align-items-center request-content">
@@ -409,24 +415,24 @@
                                 </div>
                                 <div class="d-inline-flex data-info">
                                     <div class="px-2 data-name">
-                                        <p>اسم الحالة :</p>
-                                        <p class="py-2">المستشفى :</p>
-                                        <p>المدينة :</p>
+                                        <p>Status name :</p>
+                                        <p class="py-2">The hospital :</p>
+                                        <p>City :</p>
                                     </div>
                                     <div class="px-2 data-details">
-                                        <p>احمد محمد احمد</p>
-                                        <p class="py-2">القصر العيني</p>
-                                        <p>المنصورة</p>
+                                        <p>Ahmed Mohamed Ahmed</p>
+                                        <p class="py-2">Al-Ayni Palace</p>
+                                        <p>Mansoura</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center request-btn">
-                                <a class="my-btn" href="inside-request.html">التفاصيل</a>
+                                <a class="my-btn" href="inside-request-en.html">Details</a>
                             </div>
                         </div>
                     </div>
                     <div class="text-center py-4 request-btn-more">
-                        <a class="my-btn" href="request.html">المزيد</a>
+                        <a class="my-btn" href="request-en.html">More</a>
                     </div>
                 </div>
             </section>
@@ -436,13 +442,13 @@
             <section class="call-us py-3">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-7 col-md-9 col-12 text-center">
-                            <h4 class="sub-head">اتصل بنا</h4>
-                            <p>يمكنك الاتصال بنا للاستفسار عن معلومة وسيتم الرد عليكم</p>
+                        <div class="col-12 text-center container-call-us">
+                            <h4 class="sub-head">Contact us</h4>
+                            <p>You can contact us to inquire about information, and you will be answered</p>
                             <div class="d-flex justify-content-center py-2 m-auto number">
                                 <a href="#"></a>
                                 <div class="call-number"><bdi>+002&nbsp;&nbsp;121554551</bdi></div>
-                                <img src="./assets/images/whats.png" alt="whats" />
+                                <img src="./assets/images/whats-1.png" alt="whats" />
                             </div>
                         </div>
                     </div>
@@ -455,10 +461,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-12">
-                            <h4 class="pt-4">تطبيق بنك الدم</h4>
-                            <p>هذا النص هو مثال لنص يمكن ان يستبدل فى نفس المساحة , لقد تم توليد هذا النص من مولد النص العربي</p>
+                            <h4 class="pt-4">Blood bank application</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime esse libero veniam!</p>
                             <div class="app-store pt-2">
-                                <h4 class="pb-3 text-center">متوفر على</h4>
+                                <h4 class="pb-3 text-center">Available on</h4>
                                 <div class="row">
                                     <a class="col-6 px-2" href="#">
                                         <img  src="./assets/images/google.png" alt="google play " />
@@ -488,35 +494,35 @@
                 <div class="row pt-5 content-footer">
                     <div class="col-lg-5 col-md-5">
                         <a class="footer-brand" href="index.html">
-                            <img src="./assets/images/logo.png" alt="بنك الدم" />
+                            <img src="./assets/images/logo.png" alt="Blood bank" />
                         </a>
-                        <h5 class="py-2">بنك الدم</h5>
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربى حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها</p>
+                        <h5 class="py-2">Blood Bank</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates esse culpa, ipsam animi doloribus error rem velit ab consectetur nulla eum officiis odio quos officia soluta dicta eaque suscipit!</p>
                     </div>
                     <div class="col-lg-3 col-md-3">
                         <ul class="navbar-nav  navbar-footer">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">الرئيسية<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index-en.html">Home<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">عن بنك الدم</a>
+                                <a class="nav-link" href="#">About Bank</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="article.html">المقالات</a>
+                                <a class="nav-link" href="article-en.html">Articles</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="request.html">طلبات التبرع</a>
+                                <a class="nav-link" href="request-en.html">Requests</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about-us.html">من نحن</a>
+                                <a class="nav-link" href="about-us-en.html">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contacts-us.html">اتصل بنا</a>
+                                <a class="nav-link" href="contacts-us-en.html">Contuct us</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 item-app">
-                        <h6>متوفر على</h6>
+                        <h6>Available on</h6>
                         <a class="link-app" href="#">
                             <img src="./assets/images/google1.png" alt="google play store" />
                         </a>
@@ -546,8 +552,8 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 copyright">
-                            <span>جميع الحقوق محفوظه ل 
-                                <a class="copyright-link" href="index.html">بنك الدم</a> 
+                            <span>All rights reserved to
+                                <a class="copyright-link" href="index-en.html">Blood bank</a> 
                                 <span draggable="true">&copy;</span> 2020
                             </span>
                         </div>
@@ -569,13 +575,14 @@
         <!--Bundel bootstarp-->
         <script src="./assets/plugin/bootstrap-bandel/bootstrap.bundle.min.js"></script>
 
-        <!--rtl bootstarp JS-->
-        <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
+        <!--bootstarp JS-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
         <!--Owl carousel JS-->
         <script src="./assets/plugin/owlcarousel/owl.carousel.min.js"></script>
 
         <!--Start file my JS-->
         <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/main-en.js"></script>
     </body>
 </html>

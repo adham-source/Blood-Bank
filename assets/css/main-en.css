@@ -1,0 +1,158 @@
+/*Global CSS*/
+.btn-nav-request {
+    padding: .7rem 1rem;
+}
+/*!--Start header--*/
+
+    /*Start nav-bar*/
+    /*.logo {
+        color: var(--sec-color);
+    }*/
+
+    .navbar .navbar-nav .nav-item .nav-link{
+        border-width: 0 1px 0 0;
+        text-transform: uppercase;
+    }
+
+    /*Start media query nav-bar*/
+    @media screen and (max-width: 991px) {
+        /*nav pages*/
+        .nav-request {
+            padding: 1rem 0;
+            text-align: center;
+        }
+    }
+    /*End media query nav-bar*/
+    /*End nav-bar*/
+
+    /*Start slogan*/
+    .slogan .carousel-indicators {
+        left: ;
+    }
+    /*End slogan*/
+
+/*!--End header--*/
+
+/*!--Start main--*/
+
+    /*Start about-us*/
+    /*End about-us*/
+
+    /*Start article*/
+    .article .sub-head::after {
+        left: 0;
+    }
+
+    .article .card .icon-heart {
+        left: initial;
+        right: .5rem;
+    }
+
+    .owl-nav {
+        left: initial;
+        right: 0;
+    }
+
+    .owl-nav .owl-prev span {
+        padding-inline-end: .7rem;
+    }
+    /*End article*/
+
+    /*Start requests*/
+    .requests .sub-head::after {
+        width: 15rem;
+    }
+    
+    .requests-container .selects-box .btn-group button:first-child {
+        border-radius: 1.875rem 0  0 1.875rem;
+    }
+    
+    .requests-container .selects-box .btn-group .dropdown-toggle {
+        margin-left: 2px;
+        border-radius: 0 1.875rem 1.875rem 0;
+    }
+
+    .requests-container .request-content {
+        border-radius: 3.75rem  0 0 3.75rem;
+    }
+
+    /*Start media query requestes*/
+    @media screen and (max-width: 767px) {
+        .requests-container .request-content {
+            border-radius: 1rem;
+        }
+    }
+    /*End requests*/
+
+    /*Start call-us*/
+    .call-us .sub-head::after {
+        width: 6rem;
+    }
+
+    .call-number {
+        border-radius: 3.75rem 0 0 3.75rem;
+        padding: 1.3rem 2.5rem 1.3rem 1rem;
+    }
+
+    .number img {
+        left: 82%;
+    }
+
+    /*Start media query call-us*/
+    @media screen and (max-width: 767px) {
+        .call-us .number {
+            margin: auto !important;
+        }
+    }
+
+    @media screen and (max-width: 460px) {
+        .call-us .number {
+            margin: 0 -1rem !important;
+        }
+    }
+    /*End call-us*/
+
+    /*Start about-app*/
+    /*Start about-app*/
+
+/*!--End main--*/
+
+/*!--Start footer--*/
+/*!--End footer--*/
+
+/******Start pages**********/
+/*!--Start registration-signup-en--*/
+.signup .form-group i {
+    left: initial;
+    right: 1rem;
+}
+/*!--End registration-signup-en--*/
+
+/*!--Start registration-signin-en--*/
+/*!--End registration-signin-en--*/
+
+/*!--Start article-en--*/
+.article .article-details-title .icon-heart {
+    left: initial;
+    right: .5rem;
+}
+/*!--End article-en--*/
+
+/*!--Start requests-en--*/
+/*!--End requests-en--*/
+
+/*!--Start about-us-en--*/
+/*!--End about-us-en--*/
+
+/*!--Start contacts-us-en--*/
+/*!--End contacts-us-en--*/
+
+/*!--Start inside-request-en--*/
+.container-inside-request .details-data span {
+    width: 50%;
+}
+
+.container-inside-request .details-data .address {
+    width: 35%; 
+}
+/*!--End inside-request-en--*/
