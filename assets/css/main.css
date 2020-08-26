@@ -457,8 +457,7 @@ header {
     }
 
     .article .card .btn-article {
-        display: flex;
-        justify-content: center;
+        text-align: center
     }
 
     .owl-nav {
