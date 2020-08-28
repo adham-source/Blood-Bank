@@ -26,11 +26,11 @@
             <div class="container">
                 <div class="row py-2">
                     <div class="col-md-4 col-12 langs">
-                        <a href="index.html">
+                        <a href="request.html">
                             <span class="lang-ar active">عربي</span>
                         </a>
                         <span class="entity">&#8739;</span>
-                        <a href="#">
+                        <a href="request-en.html">
                             <span class="lang-en">EN</span>
                         </a>
                     </div>
@@ -68,7 +68,7 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">الرئيسية<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -111,40 +111,34 @@
             </div>
             <div class="container">
                 <div class="border requests-container py-2 px-md-4 px-2">
-                    <div class="selects-box d-flex align-items-center justify-content-center py-4">
-                        <div class="btn-group">
-                            <button class="bg-white btn-lg text-left" type="button">
-                                اختر فصيلة الدم
-                            </button>
-                            <button type="button" class="btn-lg bg-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                
-                            </button>
-                            <div class="dropdown-menu text-center">
-                                <a class="dropdown-item" href="#"><bdi>B+</bdi></a>
-                                <a class="dropdown-item" href="#"><bdi>A+</bdi></a>
-                                <a class="dropdown-item" href="#"><bdi>AB+</bdi></a>
-                                <a class="dropdown-item" href="#"><bdi>O-</bdi></a>
-                            </div>
+                    <form class="form-request">
+                        <div class="form-group select-content">
+                            <i class="fas fa-chevron-down"></i>
+                            <select class="form-control select-box">
+                                <option selected>اختر فصيلة الدم</option>
+                                <option><bdi>B+</bdi></option>
+                                <option><bdi>A+</bdi></option>
+                                <option><bdi>AB+</bdi></option>
+                                <option><bdi>O-</bdi></option>
+                            </select>
                         </div>
-                        <div class="btn-group mx-3">
-                            <button class="bg-white btn-lg text-left" type="button">
-                                اختر المدينة
-                            </button>
-                            <button type="button" class="btn-lg bg-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                
-                            </button>
-                            <div class="dropdown-menu text-center">
-                                <a class="dropdown-item" href="#">القاهرة</a>
-                                <a class="dropdown-item" href="#">أسيوط</a>
-                                <a class="dropdown-item" href="#">الغربية</a>
-                                <a class="dropdown-item" href="#">الشرقية</a>
-                            </div>
+                        <div class="form-group select-content">
+                            <i class="fas fa-chevron-down"></i>
+                            <select class="form-control select-box">
+                                <option selected>اختر المدينة</option>
+                                <option>القاهرة</option>
+                                <option>القاهرة</option>
+                                <option>القاهرة</option>
+                                <option>القاهرة</option>
+                            </select>
                         </div>
-                        <div class="search d-inline-flex">
-                            <i class="fas fa-search m-auto"></i>
-                        </div>
-                    </div>
-
+                        <div class="form-group search-content">
+                            <button type="submit" class="btn-search">
+                                <i class="fas fa-search m-auto"></i>
+                            </button>
+                        </div>                           
+                    </form>
+          
                     <div class="row align-items-center request-content">
                         <div class="col-md-9 d-md-inline-flex px-0 request-data">
                             <div class="blood-type">
@@ -437,6 +431,9 @@
 
         <!--rtl bootstarp JS-->
         <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
+
+        <!--Jquery UI-->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
         <!--Owl carousel JS-->
         <script src="./assets/plugin/owlcarousel/owl.carousel.min.js"></script>

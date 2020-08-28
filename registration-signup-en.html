@@ -12,6 +12,9 @@
         <link rel="stylesheet" href="./assets/plugin/owlcarousel/assets/owl.carousel.min.css" />
         <link rel="stylesheet" href="./assets/plugin/owlcarousel/assets/owl.theme.default.min.css" />
 
+        <!--Jquery-ui-->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
         <!--Fontawsome CSS-->
         <link rel="stylesheet" href="./assets/css/all.min.css" />
 
@@ -61,7 +64,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="index-en.html">
-                    <img src="assets/images/logo.png" alt="Blood Bank" />
+                    <img src="./assets/images/logo-ltr.png" alt="Blood Bank" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -69,7 +72,7 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index-en.html">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -113,20 +116,22 @@
                         <input type="email" class="form-control form-control-lg" placeholder="E-mail" required />
                     </div>
                     <div class="form-group mt-3 mb-0">
-                        <input type="text" class="form-control form-control-lg" placeholder="Barth date" required />
+                        <input type="text" class="form-control form-control-lg date" placeholder="Barth date" required />
                         <i class="far fa-calendar-alt"></i>
                     </div>
                     <div class="form-group mt-3 mb-0">
                         <input type="text" class="form-control form-control-lg" placeholder="Blood type" required />
                     </div>
-                    <div class="form-group mt-3 mb-0">
+                    <div class="form-group select-content mt-3 mb-0">
+                        <i class="fas fa-chevron-down"></i>
                         <select class="form-control form-control-lg" required>
                             <option value="" selected>Governorate</option>
                             <option value="one">Cairo</option>
                             <option value="two">Al-sharqia</option>
                         </select>
                     </div>
-                    <div class="form-group mt-3 mb-0">
+                    <div class="form-group select-content mt-3 mb-0">
+                        <i class="fas fa-chevron-down"></i>
                         <select class="form-control form-control-lg" required>
                             <option value="" selected>City</option>
                             <option value="one">Cairo</option>
@@ -137,7 +142,7 @@
                         <input type="text" class="form-control form-control-lg" placeholder="Phone number" required />
                     </div>
                     <div class="form-group mt-3 mb-0">
-                        <input type="text" class="form-control form-control-lg" placeholder="Last date for donation" required />
+                        <input type="text" class="form-control form-control-lg date" placeholder="Last date for donation" required />
                         <i class="far fa-calendar-alt"></i>
                     </div>
                     <div class="form-group mt-3 mb-0">
@@ -160,7 +165,7 @@
                 <div class="row pt-5 content-footer">
                     <div class="col-lg-5 col-md-5">
                         <a class="footer-brand" href="index-en.html">
-                            <img src="./assets/images/logo.png" alt="Blood bank" />
+                            <img src="./assets/images/logo-ltr.png" alt="Blood Bank" />
                         </a>
                         <h5 class="py-2">Blood Bank</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates esse culpa, ipsam animi doloribus error rem velit ab consectetur nulla eum officiis odio quos officia soluta dicta eaque suscipit!</p>
@@ -243,6 +248,9 @@
 
         <!--bootstarp JS-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!--Jquery UI-->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
         <!--Owl carousel JS-->
         <script src="./assets/plugin/owlcarousel/owl.carousel.min.js"></script>

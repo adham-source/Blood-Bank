@@ -43,6 +43,10 @@ input, select {
     border-radius: initial !important;
 }
 
+select {
+    appearance: none;
+}
+
 .sub-head {
     position: relative;
     color: var(--sec-color);
@@ -159,6 +163,7 @@ header {
         transition: all .3s;
     }
 
+    /*.navbar .navbar-nav .nav-item:hover::after,*/
     .navbar .navbar-nav .nav-item.active::after {
         content: "";
         position: absolute;
@@ -172,7 +177,7 @@ header {
 
     .navbar .navbar-nav .nav-item:hover .nav-link,
     .navbar .navbar-nav .nav-item.active .nav-link{
-        color: var(--main-color) !important
+        color: var(--main-color) !important;
     }
 
     .navbar .navbar-nav .nav-item .nav-link{
@@ -294,7 +299,7 @@ header {
     }
 
     .slogan-text p {
-        width: 90%;
+        /*width: 90%;*/
         line-height: 2;
         font-size: 1.5rem;
     }
@@ -495,44 +500,57 @@ header {
     .requests-container {
         background: var(--five-color); 
     }
-
-    .requests-container .selects-box .btn-group {
-        width: 19rem;
-    }
-    
-    .requests-container .selects-box .btn-group button:focus {
-        outline: none;
-    }
-    
-    .requests-container .selects-box .btn-group button:first-child {
-        width: 100%;
-        border-radius: 0 1.875rem 1.875rem 0;
-    }
-    
-    .requests-container .selects-box .btn-group .dropdown-toggle {
-        margin-right: 2px;
-        padding: 0 20px;
-        border-radius: 1.875rem 0  0 1.875rem;
-        cursor: pointer;
+    /*select box*/
+    .form-request {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1rem;
     }
 
-    .requests-container .selects-box .btn-group button:first-child,
-    .requests-container .selects-box .btn-group .dropdown-toggle {
-        color: rgba(0,0,0,0.3);
+    .form-request .select-content {
+        position: relative;
+        height: calc(2.25rem + 2px);
+        width: 40%;
+        border-radius: 1.875rem;
+        background: #fff;
+    }
+
+    .form-request .select-content::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 2.5rem;
+        transform: translateY(-50%);
+        height: calc(2.25rem + 2px);
+        width: 2px;
+        background: var(--five-color);
+    }
+
+    .form-request .select-content i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0.7rem;
+        color: rgba(0, 0, 0, .3);
+    }
+
+    .form-request .select-content .select-box {
+        border-radius: 1.875rem !important;
         border: none;
     }
-    
-    .requests-container .selects-box .search {
+
+    .form-request .search-content .btn-search {
         background: #fff;
-        width: 3.125rem;
-        height: 3.125rem;
+        border: none;
+        height: calc(2.25rem + 2px);
+        width: calc(2.25rem + 2px);
         border-radius: 50%;
-        font-size: 1.2rem;
-        cursor: pointer;
     }
 
-    .requests-container .selects-box .search i {
+    .form-request .search-content .btn-search i {
         color: var(--third-color);
+        font-size: 1.25rem;
     }
 
     .requests-container .request-content {
@@ -591,12 +609,13 @@ header {
 
     /*Start media query requestes*/
     @media screen and (max-width: 767px) {
-        .requests-container .selects-box {
+        .form-request {
             flex-direction: column;
+            justify-content: space-around;
         }
-
-        .requests-container .selects-box .btn-group {
-            margin-bottom: 1rem;
+        
+        .form-request .select-content {
+            width: 80%;
         }
 
         .requests-container .request-content {
@@ -619,7 +638,6 @@ header {
         .requests-container .request-btn-more a {
             padding: .5rem 10%;
         }
-
     }
     /*End requests*/
 
@@ -1137,7 +1155,7 @@ footer .link-app img {
 }
 
 .container-inside-request .details-data .address {
-    width: 22%; 
+    width: 30%; 
 }
 
 .container-inside-request .request-btn {

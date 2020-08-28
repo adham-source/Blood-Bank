@@ -61,7 +61,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="index-en.html">
-                    <img src="assets/images/logo.png" alt="Blood Bank" />
+                    <img src="./assets/images/logo-ltr.png" alt="Blood Bank" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -69,7 +69,7 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index-en.html">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -112,40 +112,33 @@
             </div>
             <div class="container">
                 <div class="border requests-container py-2 px-md-4 px-2">
-                    <div class="selects-box d-flex align-items-center justify-content-center py-4">
-                        <div class="btn-group">
-                            <button class="bg-white btn-lg text-left" type="button">
-                                Choose blood type
-                            </button>
-                            <button type="button" class="btn-lg bg-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                
-                            </button>
-                            <div class="dropdown-menu text-center">
-                                <a class="dropdown-item" href="#"><bdi>B+</bdi></a>
-                                <a class="dropdown-item" href="#"><bdi>A+</bdi></a>
-                                <a class="dropdown-item" href="#"><bdi>AB+</bdi></a>
-                                <a class="dropdown-item" href="#"><bdi>O-</bdi></a>
-                            </div>
+                    <form class="form-request">
+                        <div class="form-group select-content">
+                            <i class="fas fa-chevron-down"></i>
+                            <select class="form-control select-box">
+                                <option selected>Choose your blood type</option>
+                                <option><bdi>B+</bdi></option>
+                                <option><bdi>A+</bdi></option>
+                                <option><bdi>AB+</bdi></option>
+                                <option><bdi>O-</bdi></option>
+                            </select>
                         </div>
-                        <div class="btn-group mx-3">
-                            <button class="bg-white btn-lg text-left" type="button">
-                            Choose a city
-                            </button>
-                            <button type="button" class="btn-lg bg-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                
-                            </button>
-                            <div class="dropdown-menu text-center">
-                                <a class="dropdown-item" href="#">Cairo</a>
-                                <a class="dropdown-item" href="#">Asyut</a>
-                                <a class="dropdown-item" href="#">Al-sharqia</a>
-                                <a class="dropdown-item" href="#">Al-gharbiuh
-                                </a>
-                            </div>
+                        <div class="form-group select-content">
+                            <i class="fas fa-chevron-down"></i>
+                            <select class="form-control select-box">
+                                <option selected>Choose a city</option>
+                                <option>Cairo</option>
+                                <option>Cairo</option>
+                                <option>Cairo</option>
+                                <option>Cairo</option>
+                            </select>
                         </div>
-                        <div class="search d-inline-flex">
-                            <i class="fas fa-search m-auto"></i>
-                        </div>
-                    </div>
+                        <div class="form-group search-content">
+                            <button type="submit" class="btn-search">
+                                <i class="fas fa-search m-auto"></i>
+                            </button>
+                        </div>                           
+                    </form>
 
                     <div class="row align-items-center request-content">
                         <div class="col-md-9 d-md-inline-flex px-0 request-data">
@@ -356,7 +349,7 @@
                 <div class="row pt-5 content-footer">
                     <div class="col-lg-5 col-md-5">
                         <a class="footer-brand" href="index-en.html">
-                            <img src="./assets/images/logo.png" alt="Blood bank" />
+                            <img src="./assets/images/logo-ltr.png" alt="Blood Bank" />
                         </a>
                         <h5 class="py-2">Blood Bank</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates esse culpa, ipsam animi doloribus error rem velit ab consectetur nulla eum officiis odio quos officia soluta dicta eaque suscipit!</p>
@@ -439,6 +432,9 @@
 
         <!--bootstarp JS-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!--Jquery UI-->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
         <!--Owl carousel JS-->
         <script src="./assets/plugin/owlcarousel/owl.carousel.min.js"></script>

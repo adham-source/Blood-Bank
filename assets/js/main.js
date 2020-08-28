@@ -1,3 +1,8 @@
+// Date picker jquery ui
+$(function() {
+    $(".date").datepicker();
+});
+
 // Start owel carousel
 $(document).ready(function(){
     $(".article .owl-carousel").owlCarousel({
@@ -22,4 +27,16 @@ $(document).ready(function(){
             }
         }
     });
+});
+
+//Add and remove class active nav-bar by url location
+const currentLocation = location.href;
+const navBarLink = document.querySelectorAll('.nav-link');
+
+navBarLink.forEach(navLink => {
+    if(navLink.href === currentLocation) {
+        navLink.parentElement.classList.add('active');
+    } else {
+        navLink.parentElement.classList.remove('active'); 
+    }
 });

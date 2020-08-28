@@ -26,6 +26,27 @@
     /*End nav-bar*/
 
     /*Start slogan*/
+    .slogan {
+        background: url(../images/header1-ltr.jpg) 50% 50% / cover no-repeat;
+    }
+
+    /*Start media query slogan*/
+    @media all and (max-width: 768px) {
+        .slogan-text p {
+            width: 50%;
+        }
+    }
+
+    @media all and (max-width: 767px) {
+        .slogan {
+            background: url(../images/BG1.jpg);
+            padding: 1rem 0;
+        }
+
+        .slogan-text p {
+            width: initial;
+        }
+    }
     /*End slogan*/
 
 /*!--End header--*/
@@ -33,6 +54,16 @@
 /*!--Start main--*/
 
     /*Start about-us*/
+    .about-us {
+        background: url(../images/about2-ltr.png) center / cover no-repeat;
+    }
+
+    /*Start media query about-us*/
+    @media screen and (max-width: 767px) {
+        .about-us {
+            padding: 2rem 0;
+        }
+    }
     /*End about-us*/
 
     /*Start article*/
@@ -60,28 +91,35 @@
         width: 15rem;
     }
     
-    .requests-container .selects-box .btn-group button:first-child {
-        border-radius: 1.875rem 0  0 1.875rem;
+    .form-request .select-content::before {
+        left: initial;
+        right: 2.5rem;
     }
-    
-    .requests-container .selects-box .btn-group .dropdown-toggle {
-        margin-left: 2px;
-        border-radius: 0 1.875rem 1.875rem 0;
+
+    .form-request .select-content i {
+        left: initial;
+        right: 0.7rem;
     }
 
     .requests-container .request-content {
-        border-radius: 3.75rem  0 0 3.75rem;
+        border-radius: 1rem;
     }
 
-    /*Start media query requestes*/
-    @media screen and (max-width: 767px) {
-        .requests-container .request-content {
-            border-radius: 1rem;
+    /*Start media query*/
+    @media screen and (max-width: 345px) {
+        .requests-container .request-content .data-info {
+            font-size: .9rem;
+            font-weight: 600;
         }
     }
     /*End requests*/
 
     /*Start call-us*/
+    .call-us {
+        background: url(../images/call-ltr.jpg) left center / cover no-repeat;
+        /*color: #3ab54a*/
+    }
+
     .call-us .sub-head::after {
         width: 6rem;
     }
@@ -145,11 +183,4 @@
 /*!--End contacts-us-en--*/
 
 /*!--Start inside-request-en--*/
-.container-inside-request .details-data span {
-    width: 50%;
-}
-
-.container-inside-request .details-data .address {
-    width: 35%; 
-}
 /*!--End inside-request-en--*/
