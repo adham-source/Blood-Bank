@@ -29,14 +29,6 @@ $(document).ready(function(){
     });
 });
 
-//Show or hide drop down menu profile
-const btnDropDown = document.querySelector('#drop-menu');
-const menuDropDowm = document.querySelector('.profile-menu');
-
-btnDropDown.addEventListener('click', () => {
-    menuDropDowm.classList.toggle('active');
-});
-
 //Add and remove class active nav-bar by url location
 const currentLocation = location.href;
 const navBarLink = document.querySelectorAll('.nav-link');
@@ -47,4 +39,12 @@ navBarLink.forEach(navLink => {
     } else {
         navLink.parentElement.classList.remove('active'); 
     }
+});
+
+//Show or hide drop down menu profile
+const btnDropDown = document.querySelector('#drop-menu');
+const menuDropDowm = document.querySelector('.profile-menu');
+
+btnDropDown.addEventListener('click', () => {
+    menuDropDowm.classList.toggle('active');
 });
