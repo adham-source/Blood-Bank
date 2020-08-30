@@ -134,6 +134,88 @@ header {
         color: #fff;
     }
 
+    /**Start menu profile**/
+    .profile-content {
+        position: relative;
+        text-align: end;
+    }
+
+    .profile-name span {
+        color: rgba(255, 172, 54, .8);
+        margin: 0 .5rem;
+    }
+
+    .profile-name a {
+        text-decoration: underline !important;
+    }
+
+    .profile-name a i {
+        font-size: .8rem;
+    }
+
+    .profile-menu {
+        position: absolute;
+        top: 2.2rem;
+        left: 0;
+        background: #fff;
+        width: 12rem;
+        padding: 0 .3rem;
+        text-align: start;
+        z-index: 3000;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .2s;
+    }
+
+    .profile-menu.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .profile-menu::after {
+        content: "";
+        position: absolute;
+        top: -19px;
+        left: 4px;
+        border-width: .6rem;
+        border-color: transparent transparent #fff transparent;
+        border-style: solid;
+    }
+
+    .profile-menu .menu-item {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        padding: .8rem .5rem;
+        margin: .1rem 0;
+        transition: all .3s;
+    }
+
+    .profile-menu .menu-item:last-child {
+        border-bottom: none;
+    }
+
+    .profile-menu .menu-item i {
+        color: rgba(0, 0, 0, .3);
+    }
+
+    .profile-menu .menu-item a {
+        color: rgba(0, 0, 0, .8);
+        padding: 0 .3rem
+    }
+
+    .profile-menu .menu-item.active,
+    .profile-menu .menu-item:hover {
+        background: var(--third-color);
+    }
+
+    .profile-menu .menu-item.active a,
+    .profile-menu .menu-item:hover a,
+    .profile-menu .menu-item.active i,
+    .profile-menu .menu-item:hover i {
+        color: #fff;
+    }
+    
+    /**End menu profile**/
+
     .navbar {
         background: #fff !important;
         padding-top: 0;
@@ -231,6 +313,15 @@ header {
 
         .contact address a i {
             font-size: .7rem;
+        }
+        /*Profile menu*/
+        .profile-content {
+            text-align: center;
+        }
+
+        .profile-menu {
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 
